@@ -137,6 +137,18 @@ const API_SITES = {
         api: 'https://dsxys.pro/',
         name: '大师兄影视' 
     },
+    wwzy: {
+        api: 'https://wwzy.tv',
+        name: '旺旺短剧'
+    },
+        hgdj: {
+        api: 'https://www.hgdj.app/',
+        name: '红果短剧'
+    },
+    ikun: {
+        api: 'https://ikunzyapi.com',
+        name: 'iKun资源'
+    },
 };
 
 // 添加聚合搜索的配置选项
