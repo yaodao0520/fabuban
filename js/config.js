@@ -149,6 +149,10 @@ const API_SITES = {
         api: 'https://ikunzyapi.com',
         name: 'iKun资源'
     },
+    flw: {
+        api: 'https://imaple8.co/',
+        name: '枫林晚'        
+    },
 };
 
 // 添加聚合搜索的配置选项
