@@ -129,14 +129,6 @@ const API_SITES = {
         api: 'https://api.wujinapi.me',
         name: '无尽资源'
     },
-    guaizi: {
-        api: 'https://gz360.tv/',
-        name: '瓜子影视'
-    },
-    dashixio: {
-        api: 'https://dsxys.pro/',
-        name: '大师兄影视' 
-    },
     wwzy: {
         api: 'https://wwzy.tv',
         name: '旺旺短剧'
@@ -148,10 +140,6 @@ const API_SITES = {
     ikun: {
         api: 'https://ikunzyapi.com',
         name: 'iKun资源'
-    },
-    flw: {
-        api: 'https://imaple8.co/',
-        name: '枫林晚'        
     },
 };
 
