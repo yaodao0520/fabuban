@@ -44,10 +44,15 @@ function initDonateFeature() {
 function openDonateModal() {
     const donateModal = document.getElementById('donateModal');
     if (donateModal) {
-        donateModal.classList.remove('hide');
-        donateModal.classList.add('show');
-        // 阻止背景滚动
-        document.body.style.overflow = 'hidden';
+        // 确保弹窗可见
+        donateModal.style.display = 'flex';
+        // 短暂延迟添加动画类，确保display生效
+        setTimeout(() => {
+            donateModal.classList.remove('hide');
+            donateModal.classList.add('show');
+            // 阻止背景滚动
+            document.body.style.overflow = 'hidden';
+        }, 10);
     }
 }
 
