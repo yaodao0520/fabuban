@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yaodaoTV 播放器</title>
-    <!-- 添加全屏桥接脚本 -->
-<script src="js/fullscreen-bridge.js"></script>
 
 
     <!-- Favicon -->
@@ -427,14 +425,6 @@
                             }
                         }
                     }, 1500);
-                  // 备份定时器确保桥接设置
-setTimeout(function() {
-    if (window.FullscreenBridge && dp) {
-        window.FullscreenBridge.setup(dp);
-        console.log('全屏桥接通过备份定时器设置');
-    }
-}, 3000);
-  
                 }
             } else {
                 showError('无效的视频链接');
