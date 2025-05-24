@@ -465,7 +465,7 @@
             // 检查用户是否已经看过声明
             const hasSeenDisclaimer = localStorage.getItem('hasSeenDisclaimer');
             
-            if (!hasSeenDisclaimer) {
+            if (hasSeenDisclaimer !== 'true') {
                 // 显示弹窗
                 const disclaimerModal = document.getElementById('disclaimerModal');
                 disclaimerModal.style.display = 'flex';
