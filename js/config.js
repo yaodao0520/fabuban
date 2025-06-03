@@ -146,10 +146,6 @@ const API_SITES = {
         name: '电影天堂资源',
         detail: 'http://caiji.dyttzyapi.com', 
     },
-    djh: {
-        api: 'https://duanjuhao.top/',
-        name: '短剧号'
-    },
 };
 
 // 添加聚合搜索的配置选项
