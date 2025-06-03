@@ -133,7 +133,7 @@ const API_SITES = {
         api: 'https://wwzy.tv',
         name: '旺旺短剧'
     },
-        hgdj: {
+    hgdj: {
         api: 'https://www.hgdj.app/',
         name: '红果短剧'
     },
@@ -145,6 +145,10 @@ const API_SITES = {
      api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
         name: '电影天堂资源',
         detail: 'http://caiji.dyttzyapi.com', 
+    },
+    djh: {
+        api: 'https://duanjuhao.top/',
+        name: '短剧号'
     },
 };
 
