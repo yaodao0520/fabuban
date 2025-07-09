@@ -165,6 +165,7 @@ const API_SITES = {
       haohua: {
         api: 'https://hhzyapi.com/api.php/provide/vod',
         name: '豪华资源'
+    },
 };
 
 // 添加聚合搜索的配置选项
