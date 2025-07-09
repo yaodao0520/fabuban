@@ -146,6 +146,25 @@ const API_SITES = {
         name: '电影天堂资源',
         detail: 'http://caiji.dyttzyapi.com', 
     },
+       subo: {
+        api: 'https://subocj.com/api.php/provide/vod',
+        name: '速博资源'
+    },
+       jinying: {
+        api: 'https://jyzyapi.com/provide/vod',
+        name: '金鹰资源'
+    },
+       taopian: {
+        api: 'https://taopianapi.com/cjapi/sda/vod',
+        name: '淘片资源'
+    },
+      niuniu: {
+        api: 'https://api.niuniuzy.me/api.php/provide/vod',
+        name: '牛牛资源'
+    },
+      豪华: {
+        api: 'https://hhzyapi.com/api.php/provide/vod',
+        name: '豪华资源'
 };
 
 // 添加聚合搜索的配置选项
