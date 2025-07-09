@@ -162,7 +162,7 @@ const API_SITES = {
         api: 'https://api.niuniuzy.me/api.php/provide/vod',
         name: '牛牛资源'
     },
-      豪华: {
+      haohua: {
         api: 'https://hhzyapi.com/api.php/provide/vod',
         name: '豪华资源'
 };
