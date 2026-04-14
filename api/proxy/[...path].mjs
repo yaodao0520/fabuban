@@ -144,6 +144,11 @@ async function fetchContentWithType(targetUrl, requestHeaders) {
         // 尝试设置一个合理的 Referer
         'Referer': requestHeaders['referer'] || new URL(targetUrl).origin,
     };
+
+    // 针对豆瓣图片资源，强制设置 Referer 绕过防盗链
+    if (targetUrl.includes('doubanio.com')) {
+        headers['Referer'] = 'https://movie.douban.com/';
+    }
     // 清理空值的头
     Object.keys(headers).forEach(key => headers[key] === undefined || headers[key] === null || headers[key] === '' ? delete headers[key] : {});
 
