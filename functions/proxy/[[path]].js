@@ -183,6 +183,11 @@ export async function onRequest(context) {
             'Referer': request.headers.get('Referer') || new URL(targetUrl).origin
         });
 
+        // 针对豆瓣图片资源，强制设置 Referer 绕过防盗链
+        if (targetUrl.includes('doubanio.com')) {
+            headers.set('Referer', 'https://movie.douban.com/');
+        }
+
         try {
             // 直接请求目标 URL
             logDebug(`开始直接请求: ${targetUrl}`);

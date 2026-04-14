@@ -93,6 +93,11 @@ async function fetchContentWithType(targetUrl, requestHeaders) {
         'Accept-Language': requestHeaders['accept-language'] || 'zh-CN,zh;q=0.9,en;q=0.8',
         'Referer': requestHeaders['referer'] || new URL(targetUrl).origin,
     };
+
+    // 针对豆瓣图片资源，强制设置 Referer 绕过防盗链
+    if (targetUrl.includes('doubanio.com')) {
+        headers['Referer'] = 'https://movie.douban.com/';
+    }
     Object.keys(headers).forEach(key => headers[key] === undefined || headers[key] === null || headers[key] === '' ? delete headers[key] : {});
     logDebug(`Fetching target: ${targetUrl} with headers: ${JSON.stringify(headers)}`);
     try {
